@@ -1,4 +1,9 @@
 const TodoData = (props) => {
+// props là một object {}
+    // name :"Aiko"
+    // age: 25;
+    // data: {}
+    
 
     console.log(">>> check props :", props)
     return (
