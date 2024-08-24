@@ -3,7 +3,7 @@ import TodoData from './components/todo/TodoData';
 import TodoNew from './components/todo/TodoNew';
 import reactLogo from './assets/react.svg';
 
-const App = () => {
+const App = ( ) => {
 
   const Aiko = "Akira Ken";
   const age = 25;
