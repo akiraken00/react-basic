@@ -17,9 +17,9 @@ const App = () => {
       <div className="todo-title"> Todo List </div>
      <TodoNew />
      <TodoData 
-    //  name={Aiko}
-    //  age={age} 
-    //  data={data}
+      name={Aiko}
+      age={age} 
+      data={data}
 
      />
      <div className='todo-image'>
