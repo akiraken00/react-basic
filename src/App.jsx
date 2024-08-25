@@ -8,7 +8,7 @@ const App = ( ) => {
   const Aiko = "Akira Ken";
   const age = 25;
   const data ={
-    address: "Xuan Ha",
+    address: "Aiko",
     country: "Vietnam"
   }
 
