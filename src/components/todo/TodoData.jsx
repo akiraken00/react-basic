@@ -1,22 +1,27 @@
 const TodoData = (props) => {
-    // props là một object {}
-        // name :"Aiko"
-        // age: 25;
-        // data: {}
-        
+    //props là một object {}
+    // {
+    //     name: "ERic",
+    //     age: 25,
+    //     data: {}
+    // }
+    //destructuring object
     const { name, age, data } = props;
-    
-    
-        console.log(">>> check props : ", props)
-        return (
-            <div className='todo-data'>
-                <div>My name is {name} </div>
-            <div> learningReact </div>
-            <div> Watching Youtube </div>
+    // const name = props.name;
+    // const age = props.age;
+    // const data = props.data;
+
+    console.log(">>> check props: ", props)
+    return (
+        <div className='todo-data'>
+            <div>My name is {name} </div>
+            <div> Learning React </div>
+            <div> Watching Youtube</div>
             <div>
-        {JSON.stringify(props.todoList)}
+                {JSON.stringify(props.todoList)}
             </div>
-            </div>
-        )
-    }
-    export default TodoData;
+        </div>
+    )
+}
+
+export default TodoData;

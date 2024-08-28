@@ -1,36 +1,35 @@
 import { useState } from "react";
 
 const TodoNew = (props) => {
-  //useState hook (getter/setter)
-  // const valueInput = "Aiko";
-  const [valueInput, setvalueInput] = useState("Aiko");
 
-  // console.log(">>> check point:", props)
-  const { addNewtodo } = props;
+    //useState hook (getter/setter)
+    // const valueInput = "eric";
+    const [valueInput, setValueInput] = useState("Akira")
 
-  // addNewtodo("Aiko") // fire
-  const handleclick = () => {
-    console.log(">>> check valueInput: ", valueInput)
-    // alert("click me");
-  };
+    const { addNewTodo } = props;
 
-  const handleOnChange = (name) => {
-    // console.log(">>> handleOnChange", name);
-    setvalueInput(name)
-  };
+    // addNewTodo("eric") //fire
+    const handleClick = () => {
+        addNewTodo(valueInput)
+    }
 
-  return (
-    <div className="todo-new">
-      <input
-        type="text"
-        onChange={(event) => handleOnChange(event.target.value)}
-      />
-      <button style={{ cursor: "pointer" }} onClick={handleclick}>
-        {" "}
-        ADD{" "}
-      </button>
-      <div>My text input = {valueInput}</div>
-    </div>
-  );
-};
+    const handleOnChange = (name) => {
+        setValueInput(name)
+    }
+    return (
+        <div className='todo-new'>
+            <input type="text"
+                onChange={(event) => handleOnChange(event.target.value)}
+            />
+            <button
+                style={{ cursor: "pointer" }}
+                onClick={handleClick}
+            >Add</button>
+            <div>
+                My text input is = {valueInput}
+            </div>
+        </div>
+    )
+}
+
 export default TodoNew;
